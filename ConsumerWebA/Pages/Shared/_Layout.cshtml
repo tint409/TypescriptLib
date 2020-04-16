@@ -45,6 +45,11 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="~/js/site.js" asp-append-version="true"></script>
 
+    <script src="~/lib/MyLib/bundle.js"></script>
+    <script type="text/javascript">
+        console.log(PiQuery.pi.add(5, 5));
+    </script>
+
     @RenderSection("Scripts", required: false)
 </body>
 </html>

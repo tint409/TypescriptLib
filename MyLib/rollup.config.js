@@ -2,10 +2,17 @@
 
 export default {
     input: 'dist/Index.js',
-    output: {
-        file: 'dist/bundle.js',
-        format: 'es'
-    },
+    output: [
+        {
+            name: 'PiQuery',
+            file: 'dist/bundle.js',
+            format: 'iife'
+        },
+        {
+            file: 'dist/bundle.es.js',
+            format: 'es'
+        }
+    ],
     plugins: [
         del({
             targets: [
