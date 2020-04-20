@@ -5,11 +5,11 @@ export default {
     output: [
         {
             name: 'PiQuery',
-            file: 'dist/bundle.js',
+            file: 'dist/myLib.es5.js',
             format: 'iife'
         },
         {
-            file: 'dist/bundle.es.js',
+            file: 'dist/myLib.js',
             format: 'es'
         }
     ],

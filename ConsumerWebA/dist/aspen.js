@@ -20,4 +20,8 @@ var Calculator = /** @class */ (function () {
 //https://hackernoon.com/building-and-publishing-a-module-with-typescript-and-rollup-js-faa778c85396
 var pi = new Calculator();
 
-export { pi };
+Calculator.prototype.multiply = function (x, y) {
+    return x * y;
+};
+
+export { Calculator, pi };

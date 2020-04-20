@@ -2,4 +2,5 @@
 
 import { Calculator } from "./Modules/Calculator.js"
 
+export { Calculator }
 export let pi = new Calculator();

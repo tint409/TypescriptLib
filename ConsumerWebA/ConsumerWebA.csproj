@@ -5,34 +5,36 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\js\aspen.d.ts" />
+    <Content Remove="wwwroot\js\CalculatorDivide.ts" />
+    <Content Remove="wwwroot\js\CalculatorMultiply.ts" />
+    <Content Remove="wwwroot\js\Index.ts" />
     <Content Remove="wwwroot\js\site.ts" />
-    <Content Remove="wwwroot\lib\MyLib\bundle.es.js" />
-    <Content Remove="wwwroot\lib\MyLib\bundle.js" />
-    <Content Remove="wwwroot\lib\MyLib\Index.d.ts" />
-    <Content Remove="wwwroot\lib\MyLib\Index.js" />
-    <Content Remove="wwwroot\lib\MyLib\Index.js.map" />
-    <Content Remove="wwwroot\lib\MyLib\Modules\Calculator.d.ts" />
-    <Content Remove="wwwroot\lib\MyLib\Modules\Calculator.js" />
-    <Content Remove="wwwroot\lib\MyLib\Modules\Calculator.js.map" />
-    <Content Remove="wwwroot\lib\MyLib\Modules\Helpers\Parser.js" />
-    <Content Remove="wwwroot\lib\MyLib\Modules\Helpers\Parser.js.map" />
+    <Content Remove="wwwroot\lib\MyLib\myLib.d.ts" />
+    <Content Remove="wwwroot\lib\MyLib\myLib.es5.js" />
+    <Content Remove="wwwroot\lib\MyLib\myLib.js" />
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="wwwroot\js\aspen.d.ts" />
+    <TypeScriptCompile Include="wwwroot\js\CalculatorDivide.ts" />
+    <TypeScriptCompile Include="wwwroot\js\CalculatorMultiply.ts" />
+    <TypeScriptCompile Include="wwwroot\js\Index.ts" />
     <TypeScriptCompile Include="wwwroot\js\site.ts" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\lib\MyLib\bundle.es.js" />
-    <None Include="wwwroot\lib\MyLib\bundle.js" />
-    <None Include="wwwroot\lib\MyLib\Index.d.ts" />
-    <None Include="wwwroot\lib\MyLib\Index.js" />
-    <None Include="wwwroot\lib\MyLib\Index.js.map" />
-    <None Include="wwwroot\lib\MyLib\Modules\Calculator.d.ts" />
-    <None Include="wwwroot\lib\MyLib\Modules\Calculator.js" />
-    <None Include="wwwroot\lib\MyLib\Modules\Calculator.js.map" />
-    <None Include="wwwroot\lib\MyLib\Modules\Helpers\Parser.js" />
-    <None Include="wwwroot\lib\MyLib\Modules\Helpers\Parser.js.map" />
+    <None Include="wwwroot\lib\MyLib\myLib.d.ts" />
+    <None Include="wwwroot\lib\MyLib\myLib.es5.js" />
+    <None Include="wwwroot\lib\MyLib\myLib.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="package-lock.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
