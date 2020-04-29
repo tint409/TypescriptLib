@@ -1,0 +1,13 @@
+﻿https://docs.microsoft.com/en-us/visualstudio/javascript/tutorial-aspnet-with-typescript?view=vs-2019
+https://www.typescriptlang.org/docs/handbook/asp-net-core.html
+
+https://docs.microsoft.com/en-us/aspnet/core/tutorials/signalr-typescript-webpack?view=aspnetcore-3.1&tabs=visual-studio
+
+https://medium.com/@jonjam/combining-webpack-with-asp-net-mvc-5-a5bd07c49d0b
+
+https://hackernoon.com/a-complete-workshop-build-your-es6-code-into-a-library-using-webpack-80295faeb833
+
+https://itnext.io/step-by-step-building-and-publishing-an-npm-typescript-package-44fe7164964c
+
+https://www.telerik.com/blogs/webpack-for-visual-studio-developers
+
