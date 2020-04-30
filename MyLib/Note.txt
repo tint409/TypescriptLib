@@ -1,13 +1,41 @@
-﻿https://docs.microsoft.com/en-us/visualstudio/javascript/tutorial-aspnet-with-typescript?view=vs-2019
+﻿OPTION 1:
+https://docs.microsoft.com/en-us/visualstudio/javascript/tutorial-aspnet-with-typescript?view=vs-2019
 https://www.typescriptlang.org/docs/handbook/asp-net-core.html
+==> From above, VS2019 installed nodejs under "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VisualStudio\NodeJs\npm"
+	So instead of 
+		npm run build
+	we can change the command to
+		"C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VisualStudio\NodeJs\npm" run build
+	however, other npm packages are also using "node". We need to point "node" to above location by modifying a system Environment Variables (https://love2dev.com/blog/node-is-not-recognized-as-an-internal-or-external-command/)
+
+
+OPTION 2:
+
+ALL below links, they require to install nodejs. And mostly, people install nodejs.
 
 https://docs.microsoft.com/en-us/aspnet/core/tutorials/signalr-typescript-webpack?view=aspnetcore-3.1&tabs=visual-studio
-
 https://medium.com/@jonjam/combining-webpack-with-asp-net-mvc-5-a5bd07c49d0b
-
 https://hackernoon.com/a-complete-workshop-build-your-es6-code-into-a-library-using-webpack-80295faeb833
-
 https://itnext.io/step-by-step-building-and-publishing-an-npm-typescript-package-44fe7164964c
-
 https://www.telerik.com/blogs/webpack-for-visual-studio-developers
 
+OPTION 3:
+	If we don't use rollupjs, we don't need to run "npm run build". By default, when building a web project, VS2019 already run
+		_tsc
+		_eslint
+	But this means we need to distribute all unbundled js file + auto-generate .d.ts file (already supported by tsconfig.json)
+		By "distribute", I mean using "xcopy" of the post build event to copy "dist" folder from lib project to consumer project.
+
+
+
+
+
+OPTION 4:
+	Use webpack to bundle
+
+
+
+
+BUNDLE VS UN-BUNDLE:
+	Bundle: easy control, since all js files are bundled, it's harder for consumer to change the lib js file.
+	Unbundle: better performance, since es6 loads only needed file.

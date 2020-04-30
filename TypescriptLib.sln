@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyLib", "MyLib\MyLib.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsumerWebA", "ConsumerWebA\ConsumerWebA.csproj", "{5507B62B-FD52-44BA-B5FC-C656645BE5B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumerWebB", "ConsumerWebB\ConsumerWebB.csproj", "{184FE66E-EB5B-41FB-A146-5AB1C6A662F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsumerWebB", "ConsumerWebB\ConsumerWebB.csproj", "{184FE66E-EB5B-41FB-A146-5AB1C6A662F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
